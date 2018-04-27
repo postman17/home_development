@@ -1,6 +1,5 @@
 # проверка github
-# проверка №2
-# еще одна проверка
+# third commit проверка
 with open('datas.txt') as inf:
     qwe = inf.readline().strip()
 print (qwe)
