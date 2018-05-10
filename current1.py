@@ -1,27 +1,24 @@
-# проверка github
-# third commit проверка
-with open('datas.txt') as inf:
-    qwe = inf.readline().strip()
-print (qwe)
-b=0
-c=0
-f=0
-qwer=open('text.txt', 'w')
-for x in range(0, len(qwe)):
-    
+class ClassName(object):
+        def __init__(self, arg, cons):
+                self.cons=cons
+                self.arg = arg
+        def __lt__(self):
+                return self.arg < self.cons
+        def __gt__(self):
+		return self.arg > self.cons
+	def __eq__(self):
+                return self.arg == self.cons
 
-    if x<(len(qwe)-2):
-        b=qwe[x]
-        c=qwe[x+1]
-        d=qwe[x+2]
-        if b.isalpha() and c.isdigit() and d.isalpha():
-            qwer.write(qwe[x])
-            print (qwe[x]*int(c), end="")
-        elif b.isalpha() and c.isdigit() and d.isdigit():
-            qwer.write(qwe[x]*int(c+d))
-            print (qwe[x]*int(c+d),end="")
-        else:
-            continue
-    elif x==(len(qwe)-1):
-        break
-qwer.close()
+y=5
+x=int(input('Ведите число:'))
+while x!=y:
+        asd=ClassName(x,y)
+        if asd>y:
+                print('Введенное число больше задуманного!')
+        if asd<y:
+                print('Введенное число меньше задуманного!')
+        if asd==y:
+                print('Вы угадали!')
+        x=int(input('Ведите число:'))
+
+	
