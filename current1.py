@@ -1,24 +1,18 @@
-class ClassName(object):
-        def __init__(self, arg, cons):
-                self.cons=cons
-                self.arg = arg
-        def __lt__(self):
-                return self.arg < self.cons
-        def __gt__(self):
-		return self.arg > self.cons
-	def __eq__(self):
-                return self.arg == self.cons
+def modify_list(l):
+    sp=[]
+    for x in l:
+        if x%2==0:
+            sp.append(int(x/2))
+    l.clear()
+    for y in sp:
+        l.append(y)        
+    return l
 
-y=5
-x=int(input('Ведите число:'))
-while x!=y:
-        asd=ClassName(x,y)
-        if asd>y:
-                print('Введенное число больше задуманного!')
-        if asd<y:
-                print('Введенное число меньше задуманного!')
-        if asd==y:
-                print('Вы угадали!')
-        x=int(input('Ведите число:'))
+lst = [1, 2, 3, 4, 5, 6]
+print(modify_list(lst))
+modify_list(lst)
+print(lst)
 
-	
+lst = [10, 5, 8, 3]
+modify_list(lst)
+print(lst)

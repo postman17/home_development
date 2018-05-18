@@ -1,3 +1,2 @@
-for x in range(1, 10):
-	y=input('sdbsdfbsfdb')
-	print('privet {}'.format(y))
+x=(-12+(6/17))/((((1+2)**4))-(5*8))
+print(x)
