@@ -1,0 +1,4 @@
+[22/Jun/2017 13:53:22] [django.db.backends.schema:103]
+[22/Jun/2017 13:53:22] [django.db.backends:90]
+[22/Jun/2017 13:53:22] [django.db.backends.schema:103]
+[22/Jun/2017 13:53:22] [django.db.backends:90]
